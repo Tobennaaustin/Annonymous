@@ -1,0 +1,63 @@
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Caveat:wght@500&family=Fjalla+One&family=Josefin+Sans:wght@300&family=Madimi+One&family=Moo+Lah+Lah&family=Poppins&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Burned&family=Varela+Round&display=swap');
+
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('photo-1582266255765-fa5cf1a1d501.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* background-color: black; */
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+.txt {
+    position: absolute;
+    bottom: 150px;
+    left:20px;
+    color: white;
+}
+
+.txt h2 {
+    font-weight: 800;
+    font-size: 2.7em;
+    margin-bottom: 10px;
+}
+
+.txt p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+a {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid gold;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
+}

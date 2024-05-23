@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+  <script>
+    ScrollReveal({
+      duration: 1000
+    })
+  </script>
+</head>
+
+<body>
+  <!-- <section id="secure">
+      <label for="password">Password</label>
+      <input type="number" name="password" id="password">
+      <p id="error"></p>
+      <button id="Submit">Submit</button>
+  </section> -->
+  <section id="hideItems">
+    <div class="txt">
+      <h2>No One Will Know You Shared It.</h2>
+    </div>
+    <div class="image">
+      <img src="depositphotos_325456174-stock-photo-anonymous-man-in-a-black.jpg" alt="">
+    </div>
+    <div class="display" id="display">
+      <div class="modal-content" id="modal">
+        <span class="close" id="close" onclick="const display = document.getElementById('display').style.display = 'none';">&times;</span>
+        <div class="danger">
+          <p><strong>Warning!</strong> Do not share what you don't want others to see</p>
+        </div>
+  
+        <div class="lists">
+          <ul>
+            <li>You cannot upload a media higher than 100mb</li>
+            <li>The Uploaded media is not sent to the bearer of the link.</li>
+            <li>This a bucket, anyone can add but can't delete lol.</li>
+            <li>By using this app you agree with our <a href="terms.html">Terms & conditions.</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content" id="modal">
+        <span class="close" id="close" onclick="const myModal = document.getElementById('myModal').style.display = 'none';">&times;</span>
+        <h1>Share A Media</h1>
+        <form class="form">
+          <label for="fileInput" class="custom-button">
+            <span class="button-label">Choose File</span>
+          </label>
+          <input type="file" id="fileInput" accept="image/*, video/*" class="file-input">
+        </form>
+      </div>
+    </div>
+    <div class="addbtn">
+      <button id="myBtn">&plus;</button>
+    </div>
+    <div class="container">
+      <!-- <button id="uploadButton">Upload</button> -->
+      <!-- <input type="text" id="searchInput" placeholder="Search..."> -->
+      <div id="mediaContainer"></div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-storage-compat.js"></script>
+
+
+
+  <script src="script.js"></script>
+  <!-- <script src="secure.js"></script> -->
+</body>
+
+</html>

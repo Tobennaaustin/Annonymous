@@ -1,0 +1,210 @@
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Caveat:wght@500&family=Fjalla+One&family=Josefin+Sans:wght@300&family=Madimi+One&family=Moo+Lah+Lah&family=Poppins&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Burned&family=Varela+Round&display=swap');
+
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.916);
+}
+/* Modal Content */
+@keyframes close-modal{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+   
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 300px;
+    left: 20px;
+}
+
+.modal-content .form {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+/* Style for the file input */
+.file-input {
+    display: none; /* Hide the default file input */
+  }
+
+  /* Style for the custom button */
+  .custom-button {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Style for the button label */
+  .button-label {
+    font-size: 16px;
+  }
+.modal-content .form button{
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #191970;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.addbtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+
+.addbtn button {
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* main body styles */
+
+.txt h2{
+    color: white;
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.container{
+    padding: 20px;
+}
+.container #mediaContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+#mediaContainer img{
+    width:330px;
+    height: 200px;
+    height: auto;
+    object-fit: center;
+    border-radius: 10px;
+}
+
+#mediaContainer video{
+    width: 330px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.image img{
+    width: 330px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
+
+/* display waring styles */
+
+.danger {
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+    margin-bottom: 15px;
+    padding: 4px 12px;
+}
+
+.display span{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 2.5em;
+}
+
+span:focus .danger{
+    visibility: none;
+}
+
+.display ul {
+    padding: 10px;
+}
+
+
+
+/* code for security form */
+
+#secure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+    padding: 20px;
+    gap: 10px;
+}
+#secure label{
+    font-size: 25px;
+    font-weight: 600;
+}
+#secure input{
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 20px;
+}
+
+#secure button{
+    padding: 10px;
+    border-radius: 5px;
+    color: wheat;
+    background-color: black;
+    border: none;
+    outline: none;
+}
