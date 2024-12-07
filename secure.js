@@ -1,6 +1,6 @@
 const secure = document.getElementById('secure');
 const hideItems = document.getElementById('hideItems');
-const password = document.getElementById('password').value();
+const password = document.getElementById('password').value;
 const error = document.getElementById('error');
 const submit = document.getElementById('Submit');
 
